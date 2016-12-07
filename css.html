@@ -1,34 +1,57 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+<title>CappingTV</title>
+<link rel="icon"
+      type="image/png"
+      href="cptv_transwhite.png">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="main.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <style>
 body,h1 {font-family: "Raleway", sans-serif}
 body, html {height: 100%}
 .bgimg {
-    background-image: url('http://www.noanxiety.com/relaxing-links/relaxing-ocean.jpg');
+    background-image: url('bg.jpg');
     min-height: 100%;
     background-position: center;
     background-size: cover;
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+  }
+    .button {
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
 }
 </style>
+<script type="text/javascript">
+    function function1() {
+      var elem = document.getElementById("iframer")
+      if (elem.src=="http://player.twitch.tv/?channel=cappingtv") elem.src = "http://youtube.com/embed/XgICatwDfTg";
+      else elem.src = "http://player.twitch.tv/?channel=cappingtv";
+
+    }
+</script>
+
 <body>
 
 <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-  <div class="w3-display-topleft w3-padding-large w3-xlarge">
-    Logo
-  </div>
-  <div class="w3-display-middle" align="center">
-    <h1 class="w3-jumbo w3-animate-top">COMING SOON</h1>
-    <hr class="w3-border-grey" style="margin:auto;width:40%">
-    <p class="w3-large w3-center">35 days left</p>
-  </div>
-  <div class="w3-display-bottomleft w3-padding-large">
-    Powered by <a href="http://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
-  </div>
 </div>
-
+  <image src="https://raw.githubusercontent.com/mitchcliff123/cappingtv.github.io/master/cpTV_transwhite.png" class="w3-display-topleft" width="106" height="60">
+  </image>
+  <div class="w3-display-middle">
+    <h1 class="w3-jumbo w3-animate-top" align="center">CAPPINGTV</h1>
+<button h2 onclick="function1()" class="button">Twitch/Youtube</button>
+    <hr class="w3-border-grey" style="margin:auto;width:100%" align="center">
+    <p class="w3-large w3-center" align="center"></p>
+    <iframe width="1024" height="576" src="http://player.twitch.tv/?channel=cappingtv" allowfullscreen align="center" style="-webkit-transform:scale(1);-moz-transform-scale(1)" id="iframer"></iframe>
+  </div>
 </body>
 </html>
