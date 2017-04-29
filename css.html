@@ -1,163 +1,35 @@
-<!DOCTYPE HTML>
-
+<!DOCTYPE html>
 <html>
-	<head>
-	<style>
-body {margin:0;}
-
-ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	background-color: #333;
-	position: fixed;
-	top: 0;
-	width: 100%;
-	opacity: 0.6;
-}
-
-li {
-	float: left;
-}
-
-li a {
-	display: block;
-	color: white;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
-	opacity: 0.6;
-}
-
-li a:hover:not(.active) {
-	background-color: #111;
-	opacity: 0.6;
-}
-
-.active {
-	background-color: #3768cc;
-	opacity: 0.6;
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+    background-image: url('/w3images/forestbridge.jpg');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
 }
 </style>
 <body>
 
-<ul>
-  <li><a href="index">Home</a></li>
-  <li><a class="active" href="music">Music</a></li>
-  <li><a href="test">Test</a></li>
-  <li><a href="#about">About</a></li>
-</ul>
-</body>
-		<title>Mackey</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="http://mackeydl.github.io/css/main.css" />
-		<link rel="shortcut icon" href="websiteimage.ico" />
-		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-	<div id="background">
-	<img src="http://mackeydl.github.io/pics/waterbg.jpg" autoplay muted loop class="stretch" alt="" />
-	</div>
-</head>
-	<body>
-			<section id="header" class="dark">
-				<header>
-					<h1>mackey</h1>
-				</header>
-				<footer>
-					<a href="test" class="button">Page</a>
-					<a onclick="aud2_play_pause()" class="button">Mix </a>
-					<a onclick="aud1_play_pause()" class="button">Yar </a>
-					<a button onclick="goBack()" class="button">Back</a>
-					<br>
-	       <h1 align="center" id="random-phrase"></h1>
-				</footer>
-	 </section>
-	 <!-- Audio -->
-	 <audio id="audio1">
-		 <source src="priate.mp3" type="audio/mpeg"
-	 </audio>
-	<audio id="audio2">
-		<source src="media/mix.mp3" type="audio/mpeg"
-	</audio>
-	<audio id="audio3">
-		<source src="media/chillmix.mp3" type="audio/mpeg"
-	</audio>
-	 <!-- Script = 	<script>
-	    var vid = document.getElementById("Audio");
-	 	 vid.volume = 0;
-	 	 x.play();
-	 </script>
- 		-->
-		<!-- Scripts -->
-		<script>
-function aud1_play_pause() {
-  var audio1 = document.getElementById("audio1");
-  if (audio1.paused) {
-    audio1.play();
-  } else {
-    audio1.pause();
-  }
-}
-</script>
-<script>
-function aud2_play_pause() {
-  var audio2 = document.getElementById("audio2");
-  if (audio2.paused) {
-    audio2.play();
-  } else {
-    audio2.pause();
-  }
-}
-</script>
-<script>
-function aud3_play_pause() {
-  var audio3 = document.getElementById("audio3");
-  if (audio3.paused) {
-    audio3.play();
-  } else {
-    audio3.pause();
-  }
-}
-</script>
-<script>
-function goBack() {
-    window.history.back();
-}
-</script>
-<script>
-	 var vid = document.getElementById("Audio1");
-	vid.volume = 0;
-	x.play();
-</script>
-<script>
-	 var vid = document.getElementById("Audio2");
-	vid.volume = 0;
-	x.play();
-</script>
-<!-- Math Script -->
-<script>
-var request = new XMLHttpRequest();
-request.onload = function() {
-		// get the file contents
-		var fileContent = this.responseText;
-		// split into lines
-		var fileContentLines = fileContent.split( '\n' );
-		// get a random index (line number)
-		var randomLineIndex = Math.floor( Math.random() * fileContentLines.length );
-		// extract the value
-		var randomLine = fileContentLines[ randomLineIndex ];
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+  <div class="w3-display-topleft w3-padding-large w3-xlarge">
+    Logo
+  </div>
+  <div class="w3-display-middle">
+    <h1 class="w3-jumbo w3-animate-top">COMING SOON</h1>
+    <hr class="w3-border-grey" style="margin:auto;width:40%">
+    <p class="w3-large w3-center">35 days left</p>
+  </div>
+  <div class="w3-display-bottomleft w3-padding-large">
+    Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+  </div>
+</div>
 
-		// add the random line in a div
-		document.getElementById( 'random-phrase' ).innerHTML = randomLine;
-};
-request.open( 'GET', src="media/text.txt", true );
-request.send()
-</script>
-	 <!-- jQuery -->
-	 <script src="http://mackeydl.github.io/js/jquery.js"></script>
-	 <!-- Bootstrap Core JavaScript -->
-	 <script src="http://mackeydl.github.io/js/bootcamp.min.js"></script>
-	 <script src="http://mackeydl.github.io/js/navshrink.js"></script>
-	</body>
+</body>
 </html>
